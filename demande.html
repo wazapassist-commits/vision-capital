@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vision Capital — Faire ma demande</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="index.html"><img src="logo.png" alt="Vision Capital"><div><b>Vision Capital</b><span>Financier Français</span></div></a>
+<nav class="links" id="links">
+<a href="index.html">Accueil</a><a href="offres.html">Offres</a><a href="simulateur.html">Simulateur</a><a href="demande.html">Demande</a><a href="contact.html">Contact</a>
+</nav>
+<div style="display:flex;gap:10px;align-items:center">
+<a href="simulateur.html" class="btn btn-ghost">Simuler</a>
+<button class="burger" onclick="toggleMenu()">☰</button>
+</div>
+</div></header>
+
+<section><div class="container">
+<span class="eyebrow">Demande officielle · Gratuite</span>
+<h2>Formulaire de demande Vision Capital.</h2>
+<p class="sub">3 minutes suffisent. Vos choix depuis les pages Offres / Simulateur sont repris automatiquement.</p>
+<div class="split">
+<div class="panel dark" id="demande">
+<div id="formWrap">
+<p style="color:#8f9bcf;font-size:13.5px">Réponse par SMS + e-mail. Données confidentielles, hébergées en UE.</p>
+<form id="mainForm" onsubmit="return submitForm(event)">
+<label>Dispositif *</label>
+<select id="fType" required><option>Financement Non Remboursable</option><option>Don Solidaire</option><option>Prêt Solidaire</option><option>Crédit d'Accompagnement</option><option>Investissement Solidaire</option></select>
+<div class="row2">
+<div><label>Montant (€ / XPF / CHF) *</label><input id="fMontant" type="number" min="1000" max="200000" value="25000" required></div>
+<div><label>Motif *</label><select id="fMotif"><option>Soutien personnel</option><option>Projet familial / logement</option><option>Création entreprise</option><option>Trésorerie / urgence</option><option>Achat / investissement</option></select></div>
+</div>
+<div class="row2">
+<div><label>Territoire *</label><select id="fTerr"><option>France métropolitaine</option><option>DOM-TOM</option><option>Polynésie / XPF</option><option>Suisse / CHF</option><option>Belgique / Luxembourg</option></select></div>
+<div><label>Banque *</label><input id="fBank" placeholder="Ex : BNP Paribas" required></div>
+</div>
+<div class="row2">
+<div><label>Nom *</label><input id="fNom" required placeholder="Nom"></div>
+<div><label>Prénom *</label><input id="fPrenom" required placeholder="Prénom"></div>
+</div>
+<div class="row2">
+<div><label>Téléphone *</label><input id="fTel" type="tel" required placeholder="+33 6 ..."></div>
+<div><label>E-mail *</label><input id="fMail" type="email" required placeholder="vous@exemple.fr"></div>
+</div>
+<label>Titulaire du compte *</label><input id="fTit" required placeholder="Nom exact sur le RIB">
+<div class="row2">
+<div><label>IBAN / RIB *</label><input id="fIban" required placeholder="FR76 ..."></div>
+<div><label>BIC</label><input id="fBic" placeholder="BNPAFRPP"></div>
+</div>
+<label style="display:flex;gap:10px;font-weight:400;font-size:12.5px;margin-top:16px"><input type="checkbox" required style="width:16px"> Je certifie l'exactitude de mes informations et accepte d'être recontacté pour l'étude d'éligibilité (RGPD, UE).</label>
+<button class="btn btn-light" style="width:100%;margin-top:16px" type="submit">Transmettre pour analyse</button>
+<p style="font-size:11.5px;color:#7d89b8;text-align:center;margin-top:10px">Connexion chiffrée SSL · Aucun frais avancé demandé.</p>
+</form>
+</div>
+<div class="ok" id="successBox">
+<div style="font-size:48px">✓</div>
+<h2 style="color:#fff">Demande transmise</h2>
+<p style="color:#aeb8e2;font-size:14px">Analyse prioritaire par la commission solidaire.</p>
+<div class="ref" id="refNum">N° Dossier : VC-2026-0000</div>
+<p style="color:#aeb8e2;font-size:13px" id="recap"></p>
+<p style="margin-top:14px"><a href="contact.html" class="btn btn-light">Contacter le service attribution →</a></p>
+</div>
+</div>
+<div class="panel">
+<span class="eyebrow">Rassurez-vous</span>
+<h2 style="font-size:24px">Après l'envoi, que se passe-t-il ?</h2>
+<div class="st"><i>1</i><div><b>Accusé immédiat</b><p>N° de dossier VC affiché + récapitulatif.</p></div></div>
+<div class="st"><i>2</i><div><b>Analyse 24–48h</b><p>Commission solidaire + SMS / e-mail de suivi.</p></div></div>
+<div class="st"><i>3</i><div><b>Convention</b><p>Acte d'octroi visé avant tout versement.</p></div></div>
+<div class="st" style="border:0"><i>4</i><div><b>Virement direct</b><p>Ordre SEPA traçable sur votre IBAN.</p></div></div>
+<div class="result"><small>Besoin d'aide ?</small><b style="font-size:20px">+33 1 84 80 20 40</b><p>Lun–Sam 8h–20h · contact@vision-capital.fr</p></div>
+</div>
+</div>
+</div></section>
+
+<footer><div class="container">
+<div class="fg">
+<div><div style="display:flex;gap:10px;align-items:center;margin-bottom:12px"><img src="logo.png" style="height:38px;border-radius:8px;background:#fff"><b style="color:#fff">Vision Capital</b></div><p>+33 1 84 80 20 40<br>contact@vision-capital.fr</p></div>
+<div><h5>PAGES</h5><p><a href="index.html">Accueil</a><br><a href="offres.html">Offres</a><br><a href="simulateur.html">Simulateur</a><br><a href="contact.html">Contact</a></p></div>
+<div><h5>AIDES</h5><p><a href="offres.html">Non remboursable</a><br><a href="offres.html">Don solidaire</a><br><a href="offres.html">Prêt taux 0%</a></p></div>
+<div><h5>CONFIANCE</h5><p>Convention écrite<br>Virement traçable<br>RGPD</p></div>
+</div>
+<div class="fb"><span>© 2026 Vision Capital.</span><span><a href="contact.html">Mentions légales</a></span></div>
+</div></footer>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

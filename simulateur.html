@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vision Capital — Simulateur gratuit</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="index.html"><img src="logo.png" alt="Vision Capital"><div><b>Vision Capital</b><span>Financier Français</span></div></a>
+<nav class="links" id="links">
+<a href="index.html">Accueil</a><a href="offres.html">Offres</a><a href="simulateur.html">Simulateur</a><a href="demande.html">Demande</a><a href="contact.html">Contact</a>
+</nav>
+<div style="display:flex;gap:10px;align-items:center">
+<a href="demande.html" class="btn btn-primary">Faire une demande</a>
+<button class="burger" onclick="toggleMenu()">☰</button>
+</div>
+</div></header>
+
+<section><div class="container">
+<span class="eyebrow">Simulateur gratuit</span>
+<h2>Estimez votre aide en 20 secondes.</h2>
+<p class="sub">Choisissez un dispositif et un montant : il sera repris automatiquement dans votre demande.</p>
+<div class="split">
+<div class="panel">
+<label>Type d'aide</label>
+<select id="simType" onchange="sim()"><option>Financement Non Remboursable</option><option>Don Solidaire</option><option>Prêt Solidaire</option><option>Crédit d'Accompagnement</option><option>Investissement Solidaire</option></select>
+<label>Montant souhaité : <span id="simVal" style="color:var(--blue)">25 000 €</span></label>
+<input type="range" id="simMontant" min="1000" max="200000" step="1000" value="25000" oninput="sim()">
+<div class="row2">
+<div><label>Territoire</label><select id="simTerr" onchange="sim()"><option>France (€)</option><option>DOM-TOM (€)</option><option>Pacifique (XPF)</option><option>Suisse (CHF)</option><option>Belgique / Luxembourg (€)</option></select></div>
+<div><label>Banque</label><select id="simBank"><option>BNP Paribas</option><option>Société Générale</option><option>La Banque Postale</option><option>Crédit Agricole</option><option>Banque en ligne</option><option>Autre SEPA</option></select></div>
+</div>
+<div class="result"><small>Montant estimatif versable</small><b id="simOut">25 000 €</b><p id="simDetail">Remboursement exigé : 0 € · Délai 24–48h</p></div>
+<button class="btn btn-primary" style="width:100%;margin-top:14px" onclick="useSim()">Continuer vers ma demande →</button>
+</div>
+<div class="panel dark">
+<span class="eyebrow" style="color:#8fa0ff">Comment ça marche</span>
+<h2 style="color:#fff;font-size:26px">3 étapes, 0 paperasse.</h2>
+<div class="st" style="border-color:#2a376e"><i>1</i><div><b style="color:#fff">Simulez</b><p style="color:#aeb8e2">Montant + dispositif, sans engagement.</p></div></div>
+<div class="st" style="border-color:#2a376e"><i>2</i><div><b style="color:#fff">Déposez</b><p style="color:#aeb8e2">Formulaire repris en 1 clic, 3 minutes.</p></div></div>
+<div class="st" style="border:0"><i>3</i><div><b style="color:#fff">Recevez</b><p style="color:#aeb8e2">Virement direct sous 24–48h après validation.</p></div></div>
+<a href="offres.html" class="btn btn-light" style="width:100%;margin-top:14px">Revoir les 5 aides</a>
+</div>
+</div>
+</div></section>
+
+<footer><div class="container">
+<div class="fg">
+<div><div style="display:flex;gap:10px;align-items:center;margin-bottom:12px"><img src="logo.png" style="height:38px;border-radius:8px;background:#fff"><b style="color:#fff">Vision Capital</b></div><p>+33 1 84 80 20 40<br>contact@vision-capital.fr</p></div>
+<div><h5>PAGES</h5><p><a href="index.html">Accueil</a><br><a href="offres.html">Offres</a><br><a href="demande.html">Demande</a><br><a href="contact.html">Contact</a></p></div>
+<div><h5>AIDES</h5><p><a href="offres.html">Non remboursable</a><br><a href="offres.html">Don solidaire</a><br><a href="offres.html">Prêt taux 0%</a></p></div>
+<div><h5>CONFIANCE</h5><p>Convention écrite<br>Virement traçable<br>RGPD</p></div>
+</div>
+<div class="fb"><span>© 2026 Vision Capital.</span><span><a href="contact.html">Mentions légales</a></span></div>
+</div></footer>
+<div class="mobile-cta"><a href="offres.html" class="btn btn-ghost">Nos aides</a><a href="demande.html" class="btn btn-blue">Continuer ma demande</a></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

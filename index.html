@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vision Capital — Accueil | Financement Solidaire jusqu'à 200 000 €</title>
+<meta name="description" content="Vision Capital, établissement financier français. Financement non remboursable, don solidaire, prêt taux 0%. Réponse 24h-48h.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="index.html"><img src="logo.png" alt="Vision Capital"><div><b>Vision Capital</b><span>Financier Français</span></div></a>
+<nav class="links" id="links">
+<a href="index.html">Accueil</a><a href="offres.html">Offres</a><a href="simulateur.html">Simulateur</a><a href="demande.html">Demande</a><a href="contact.html">Contact</a>
+</nav>
+<div style="display:flex;gap:10px;align-items:center">
+<a href="demande.html" class="btn btn-primary">Faire une demande</a>
+<button class="burger" onclick="toggleMenu()">☰</button>
+</div>
+</div></header>
+
+<div class="hero" id="accueil"><div class="container hero-grid">
+<div>
+<span class="pill"><svg fill="none" stroke="#1e3aff" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Établissement financier français · Fonds solidaire</span>
+<h1>Votre soutien financier <span>jusqu'à 200 000 €</span>, versé en 24–48h.</h1>
+<p class="lead">Financement non remboursable, don solidaire, prêt à taux 0%, crédit d'accompagnement et investissement. Dossier 100% en ligne, analyse prioritaire, virement bancaire direct.</p>
+<div class="hero-cta">
+<a href="demande.html" class="btn btn-blue">Démarrer ma demande gratuite
+<svg width="16" height="16" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a href="offres.html" class="btn btn-ghost">Découvrir les 5 aides</a>
+</div>
+<div class="proof">
+<div><span class="tick"><svg width="12" height="12" fill="none" stroke="#0d7a3f" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Sans déplacement d'agence</div>
+<div><span class="tick"><svg width="12" height="12" fill="none" stroke="#0d7a3f" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Sans frais cachés</div>
+<div><span class="tick"><svg width="12" height="12" fill="none" stroke="#0d7a3f" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Données chiffrées</div>
+</div>
+<div class="banks"><span>BNP PARIBAS</span><span>SOCIÉTÉ GÉNÉRALE</span><span>BANQUE POSTALE</span><span>CRÉDIT AGRICOLE</span><span>BOURSORAMA</span></div>
+</div>
+<div class="hcard">
+<div class="hcard-top"><small>DEMANDE PRIORITAIRE</small><span class="live">● Dossiers ouverts</span></div>
+<div class="hamount" id="heroAmount">25 000 €</div>
+<div style="font-size:13px;color:#8f9bcf" id="heroType">Financement non remboursable</div>
+<ul>
+<li><span>Type d'aide</span><strong>Fonds perdus</strong></li>
+<li><span>Délai de versement</span><strong>24h – 48h</strong></li>
+<li><span>Remboursement exigé</span><strong style="color:#2ee57f">0 €</strong></li>
+<li><span>Convention</span><strong>Incluse & visée</strong></li>
+</ul>
+<a href="simulateur.html" class="btn btn-light" style="width:100%;position:relative">Estimer mon aide en 20 sec</a>
+<div class="hint">Exemple illustratif. Attribution soumise à étude d'éligibilité.</div>
+</div>
+</div></div>
+
+<div class="stats"><div class="container">
+<div class="stat"><b>12 480+</b><span>Dossiers accompagnés</span></div>
+<div class="stat"><b>38,6 M€</b><span>Fonds solidaires versés</span></div>
+<div class="stat"><b>24–48h</b><span>Délai moyen de virement</span></div>
+<div class="stat"><b>4,8/5</b><span>Satisfaction bénéficiaires</span></div>
+</div></div>
+
+<section id="offres"><div class="container">
+<span class="eyebrow">Aperçu de nos aides</span>
+<h2>3 dispositifs les plus demandés.</h2>
+<p class="sub">Le détail complet des 5 aides et leurs procédures en 4 étapes se trouve sur la page Offres.</p>
+<div class="grid">
+<div class="card hl">
+<span class="tag dark">Le plus demandé</span>
+<div class="ic"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4"/><path d="M12 8v13M5 12v9h14v-9M12 8s-1.5-5-4.5-5S5 8 12 8zM12 8s1.5-5 4.5-5S19 8 12 8z"/></svg></div>
+<h3>Financement Non Remboursable</h3><h4>Aide à fonds perdus</h4>
+<p class="d">Subvention intégrale à fonds perdus. <strong>Aucun remboursement exigé.</strong> Jusqu'à 200 000 €.</p>
+<div class="acts"><button class="btn btn-primary" style="width:100%" onclick="prefill('Financement Non Remboursable')">Demander cette aide</button></div>
+</div>
+<div class="card">
+<span class="tag green">Sans contrepartie</span>
+<div class="ic"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+<h3>Don Solidaire</h3><h4>Allocation sans contrepartie</h4>
+<p class="d">Don financier direct <strong>sans contrepartie</strong>, de 1 000 à 80 000 €.</p>
+<div class="acts"><button class="btn btn-ghost" style="width:100%" onclick="prefill('Don Solidaire')">Demander cette aide</button></div>
+</div>
+<div class="card">
+<span class="tag">Taux 0% possible</span>
+<div class="ic"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M19 5L5 19M6.5 9a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM17.5 23a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg></div>
+<h3>Prêt Solidaire</h3><h4>Taux 0% ou préférentiel</h4>
+<p class="d">Avance de trésorerie souple jusqu'à 150 000 €, déblocage 24–48h ouvrées.</p>
+<div class="acts"><button class="btn btn-ghost" style="width:100%" onclick="prefill('Prêt Solidaire')">Demander cette aide</button></div>
+</div>
+</div>
+<div style="text-align:center;margin-top:22px"><a href="offres.html" class="btn btn-ghost">Voir les 5 aides + procédures →</a></div>
+</div></section>
+
+<section class="how" id="methode"><div class="container">
+<span class="eyebrow">Méthode</span>
+<h2>Un parcours simple et suivi.</h2>
+<div class="steps4">
+<div class="s"><span>01</span><h3>Demande en 3 min</h3><p>Territoire, banque, montant + IBAN. 100% en ligne.</p></div>
+<div class="s"><span>02</span><h3>Éligibilité prioritaire</h3><p>Analyse automatique + revue commission solidaire.</p></div>
+<div class="s"><span>03</span><h3>Convention d'octroi</h3><p>Acte écrit, visé et archivé avant versement.</p></div>
+<div class="s"><span>04</span><h3>Virement 24–48h</h3><p>Ordre direct sur votre compte certifié.</p></div>
+</div>
+<div style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap"><a href="simulateur.html" class="btn btn-ghost">Faire une simulation</a><a href="demande.html" class="btn btn-blue">Déposer ma demande →</a></div>
+</div></section>
+
+<section id="avis"><div class="container">
+<span class="eyebrow">Avis bénéficiaires</span>
+<h2>Ils ont été accompagnés.</h2>
+<div class="testis">
+<div class="tcard"><div class="stars">★★★★★</div><p><strong>Virement reçu en 48h.</strong><br>Financement non remboursable de 18 000 €. Équipe très humaine.</p><div class="who"><div class="av">SM</div><div><b style="font-size:13px">Sandrine M. — Lyon</b><small>18 000 € · Fonds perdus</small></div></div></div>
+<div class="tcard"><div class="stars">★★★★★</div><p><strong>Procédure claire, sans stress.</strong><br>Don de 9 500 €, convention reçue avant virement.</p><div class="who"><div class="av">JT</div><div><b style="font-size:13px">Jean-Claude T. — Guadeloupe</b><small>9 500 € · Don solidaire</small></div></div></div>
+<div class="tcard"><div class="stars">★★★★★</div><p><strong>Mon food-truck a démarré.</strong><br>45 000 € validés par le comité Élan en 2 jours.</p><div class="who"><div class="av">KB</div><div><b style="font-size:13px">Karim B. — Marseille</b><small>45 000 € · Investissement</small></div></div></div>
+</div>
+<div class="cta"><div><h2>Prêt à vérifier votre éligibilité ?</h2><p>Dépôt gratuit en 3 minutes · Réponse 24–48h.</p></div><a href="demande.html" class="btn btn-light">Déposer ma demande →</a></div>
+</div></section>
+
+<footer><div class="container">
+<div class="fg">
+<div><div style="display:flex;gap:10px;align-items:center;margin-bottom:12px"><img src="logo.png" style="height:38px;border-radius:8px;background:#fff"><b style="color:#fff">Vision Capital</b></div><p>Établissement financier français à vocation solidaire.<br><br>+33 1 84 80 20 40<br>contact@vision-capital.fr<br>12 avenue de l'Opéra, 75001 Paris</p></div>
+<div><h5>PAGES</h5><p><a href="index.html">Accueil</a><br><a href="offres.html">Nos 5 offres</a><br><a href="simulateur.html">Simulateur</a><br><a href="demande.html">Demande</a><br><a href="contact.html">Contact & FAQ</a></p></div>
+<div><h5>AIDES</h5><p><a href="offres.html">Non remboursable</a><br><a href="offres.html">Don solidaire</a><br><a href="offres.html">Prêt taux 0%</a><br><a href="offres.html">Crédit accompagnement</a><br><a href="offres.html">Investissement</a></p></div>
+<div><h5>CONFIANCE</h5><p>Convention écrite systématique<br>Virement SEPA traçable<br>Données chiffrées RGPD<br>Lun–Sam 8h–20h</p></div>
+</div>
+<div class="fb"><span>© 2026 Vision Capital — Attribution soumise à éligibilité.</span><span><a href="contact.html">Mentions légales · Confidentialité</a></span></div>
+</div></footer>
+
+<div class="mobile-cta">
+<a href="simulateur.html" class="btn btn-ghost">Simuler</a>
+<a href="demande.html" class="btn btn-blue">Vérifier mon éligibilité</a>
+</div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

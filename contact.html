@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vision Capital — Contact, FAQ & Mentions</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="index.html"><img src="logo.png" alt="Vision Capital"><div><b>Vision Capital</b><span>Financier Français</span></div></a>
+<nav class="links" id="links">
+<a href="index.html">Accueil</a><a href="offres.html">Offres</a><a href="simulateur.html">Simulateur</a><a href="demande.html">Demande</a><a href="contact.html">Contact</a>
+</nav>
+<div style="display:flex;gap:10px;align-items:center">
+<a href="demande.html" class="btn btn-primary">Faire une demande</a>
+<button class="burger" onclick="toggleMenu()">☰</button>
+</div>
+</div></header>
+
+<section><div class="container">
+<span class="eyebrow">Contact</span>
+<h2>Parlons de votre dossier.</h2>
+<p class="sub">Suivi de dossier, question d'éligibilité, aide au formulaire : écrivez-nous, réponse sous 24h ouvrées.</p>
+<div class="split">
+<div class="panel">
+<h3 style="font-size:20px">Nos coordonnées</h3>
+<p style="color:var(--muted);font-size:14px;margin-top:8px">Vision Capital<br>12 avenue de l'Opéra, 75001 Paris<br><br><strong>Tél :</strong> +33 1 84 80 20 40<br><strong>E-mail :</strong> contact@vision-capital.fr<br><strong>Horaires :</strong> Lun–Sam 8h–20h</p>
+<div class="result"><small>Délai moyen de réponse</small><b>Moins de 24h</b><p>Pour un suivi plus rapide, indiquez votre n° de dossier VC-2026-XXXX.</p></div>
+<a href="demande.html" class="btn btn-primary" style="width:100%;margin-top:14px">Déposer / suivre ma demande →</a>
+</div>
+<div class="panel dark">
+<h3 style="font-size:20px">Message rapide</h3>
+<form onsubmit="event.preventDefault();toast('Message envoyé, réponse sous 24h');this.reset();">
+<label>Votre nom</label><input required placeholder="Nom et prénom">
+<label>E-mail ou téléphone</label><input required placeholder="Pour vous recontacter">
+<label>Votre message</label><input required placeholder="N° dossier + question" style="padding-bottom:44px">
+<button class="btn btn-light" style="width:100%;margin-top:14px" type="submit">Envoyer le message</button>
+</form>
+</div>
+</div>
+</div></section>
+
+<section id="faq" style="background:var(--bg);border-top:1px solid var(--line)"><div class="container">
+<div style="text-align:center"><span class="eyebrow">FAQ</span><h2>Questions fréquentes.</h2></div>
+<div class="faq">
+<div class="fi"><button class="fq" onclick="this.parentElement.classList.toggle('open')">Dois-je rembourser le financement ? <span>+</span></button><div class="fa">Non. Subvention à fonds perdus : aucun remboursement exigé après validation et signature de la convention.</div></div>
+<div class="fi"><button class="fq" onclick="this.parentElement.classList.toggle('open')">Quel montant maximum ? <span>+</span></button><div class="fa">Jusqu'à 200 000 € (ou équivalent XPF / CHF). Selon situation et enveloppe disponible.</div></div>
+<div class="fi"><button class="fq" onclick="this.parentElement.classList.toggle('open')">Quel délai de versement ? <span>+</span></button><div class="fa">Virement direct sous 24h à 48h après validation, sur l'IBAN / RIB indiqué.</div></div>
+<div class="fi"><button class="fq" onclick="this.parentElement.classList.toggle('open')">Y a-t-il des frais à avancer ? <span>+</span></button><div class="fa">Non. L'étude est gratuite et aucun versement anticipé n'est demandé.</div></div>
+<div class="fi"><button class="fq" onclick="this.parentElement.classList.toggle('open')">Quelles banques acceptez-vous ? <span>+</span></button><div class="fa">Toutes banques SEPA + DOM-TOM, Pacifique (XPF) et Suisse (CHF).</div></div>
+<div class="fi"><button class="fq" onclick="this.parentElement.classList.toggle('open')">Où sont mes données ? <span>+</span></button><div class="fa">Hébergées en UE, usage limité à l'étude d'éligibilité, suppression sur simple demande (RGPD).</div></div>
+</div>
+<div class="cta"><div><h2>Mentions d'information</h2><p>Document vitrine : ne vaut pas offre ferme. Toute attribution est soumise à étude d'éligibilité et signature d'une convention. Personnalisez ici raison sociale, RCS, n° ORIAS et adresse réelle avant mise en ligne.</p></div><a href="demande.html" class="btn btn-light">Déposer ma demande →</a></div>
+</div></section>
+
+<footer><div class="container">
+<div class="fg">
+<div><div style="display:flex;gap:10px;align-items:center;margin-bottom:12px"><img src="logo.png" style="height:38px;border-radius:8px;background:#fff"><b style="color:#fff">Vision Capital</b></div><p>Établissement financier français à vocation solidaire.</p></div>
+<div><h5>PAGES</h5><p><a href="index.html">Accueil</a><br><a href="offres.html">Offres</a><br><a href="simulateur.html">Simulateur</a><br><a href="demande.html">Demande</a></p></div>
+<div><h5>AIDES</h5><p><a href="offres.html">Non remboursable</a><br><a href="offres.html">Don solidaire</a><br><a href="offres.html">Prêt taux 0%</a></p></div>
+<div><h5>CONFIANCE</h5><p>Convention écrite<br>Virement traçable<br>RGPD</p></div>
+</div>
+<div class="fb"><span>© 2026 Vision Capital — Attribution soumise à éligibilité.</span><span>Mentions légales · CGU · Confidentialité</span></div>
+</div></footer>
+<div class="mobile-cta"><a href="simulateur.html" class="btn btn-ghost">Simuler</a><a href="demande.html" class="btn btn-blue">Vérifier mon éligibilité</a></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
