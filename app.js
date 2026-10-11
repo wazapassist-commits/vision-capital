@@ -12,7 +12,7 @@ function sim(){
   const t=document.getElementById('simType').value;
   const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
   set('simVal',fmt(m)); set('heroAmount',fmt(m)); set('heroType',t);
-  let d=(t.includes('Prêt')||t.includes('Crédit'))?'Taux 0% / préférentiel · Déblocage 24–48h ouvrées':(t.includes('Don')?'Remboursement : 0 € · Acte de don + paiement immédiat':(t.includes('Invest')?'Apport en capital · Comité Élan · Injection directe':'Remboursement : 0 € · Délai 24–48h'));
+  let d=t.includes('Immobilier')?'Taux préférentiel · Accompagnement notaire · Déblocage sous 48h':((t.includes('Prêt')||t.includes('Crédit'))?'Taux 0% / préférentiel · Déblocage 24–48h ouvrées':(t.includes('Invest')?'Apport en capital · Comité Élan · Injection directe':'Remboursement : 0 € · Délai 24–48h'));
   set('simOut',fmt(m)); set('simDetail',d);
 }
 /* Pré-sélection inter-pages : offres -> demande.html?type=... */
